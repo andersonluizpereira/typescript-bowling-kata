@@ -13,7 +13,7 @@ describe('Bowling Game', () => {
   })
 
   test('Should score 20 for all ones game', () => {
-    rollMany(20, 0)
+    rollMany(20, 1)
     expect(g.score).toBe(20)
   })
 
