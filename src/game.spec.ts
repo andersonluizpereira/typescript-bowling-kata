@@ -21,7 +21,7 @@ describe('Bowling Game', () => {
   //   g.roll(5)
   //   g.roll(5)
   //   g.roll(3)
-  //   expect(g.score).toBe(16)
+  //   expect(g.score()).toBe(16)
   // })
 
   function rollMany (n: number, pins: number): void {
