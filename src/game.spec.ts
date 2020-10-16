@@ -1,5 +1,12 @@
 import { Game } from './game'
 
+
+let g: Game = new Game()
+
+beforeEach(() => {
+  g = new Game()
+})
+
 describe('Bowling Game', () => {
   test('Should score 0 for Gutter Game', () => {
     const g: Game = new Game()
