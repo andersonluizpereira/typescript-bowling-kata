@@ -24,7 +24,7 @@ describe('Bowling Game', () => {
   })
 
   test('should score 24 for a strike followed by a 3 and 4 balls', () => {
-    g.roll(10)
+    rollStrike()
     g.roll(3)
     g.roll(4)
     rollMany(16, 0)
@@ -39,5 +39,8 @@ describe('Bowling Game', () => {
     for (let i = 0; i < n; i++) {
       g.roll(pins)
     }
+  }
+  function rollStrike (): void {
+    g.roll(10)
   }
 })
